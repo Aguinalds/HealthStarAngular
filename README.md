@@ -48,7 +48,7 @@ ng g c <nome>
 
 dotnet-aspnet-codegenerator controller -name LoginController -m Login -dc Banco -api --relativeFolderPath Controllers
 
-================================================================================================================================================================================
+========================================================================================================================================================================================
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
