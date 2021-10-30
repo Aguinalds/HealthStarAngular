@@ -40,7 +40,7 @@ cd my-first-project //Cd no projeto (nao obrigatorio)
 
 ng serve --open
 
-- *CRIAR PAGE ANGULAR*
+## *CRIAR PAGE ANGULAR*
 
 ng g c <nome>
 
