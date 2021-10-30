@@ -3,7 +3,7 @@ export const Remedios = [
     {
         id: 1,
         nome: 'Remedio 1',
-        desc: 'Descrição',
+        desc: 'Descrição 1',
         foto: ''
     },
     {
