@@ -1,0 +1,17 @@
+.seletor{
+    display: flex;
+    align-items: stretch;
+}
+
+.seletor input {
+    width: 50px;
+    text-align: center;
+}
+
+.seletor-item {
+    margin-left: 5px;
+}
+.seletor-item-mais, .seletor-item-menos, .seletor-item-adicionar {
+    background-color: #3195cf;
+    margin-left: 9px;
+}
