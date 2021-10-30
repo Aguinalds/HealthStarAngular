@@ -1,0 +1,13 @@
+table {
+    padding-left: 200px;
+    width: 100%;
+    background-color: #1B1A1A;
+    
+        
+  }
+ng-container, td{
+    color: aliceblue;
+}  
+th {
+    color: #3195cf;
+}
