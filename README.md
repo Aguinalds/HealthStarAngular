@@ -1,52 +1,52 @@
 # HealthStarAngular
 
-- *PACOTES*
+## *PACOTES*
 
-dotnet add package Microsoft.AspNetCore.Authentication
+- dotnet add package Microsoft.AspNetCore.Authentication
 
-dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+- dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 
-dotnet add package Microsoft.EntityFrameworkCore
+- dotnet add package Microsoft.EntityFrameworkCore
 
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+- dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
-dotnet add package Microsoft.EntityFrameworkCore.Design
+- dotnet add package Microsoft.EntityFrameworkCore.Design
 
-- *NOVAS*
+## *NOVAS*
 
-dotnet tool install -g dotnet-aspnet-codegenerator
+- dotnet tool install -g dotnet-aspnet-codegenerator
 
-dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+- dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
 
-- *BANCO DE DADOS*
+## *BANCO DE DADOS*
 
-dotnet tool install --global dotnet-ef
+- dotnet tool install --global dotnet-ef
 
-dotnet ef migrations add Initial
+- dotnet ef migrations add Initial
 
-dotnet ef database update
+- dotnet ef database update
 
-- *EXECUTAR O PROJETO*
+## *EXECUTAR O PROJETO*
 
-dotnet watch run
+- dotnet watch run
 
-- *ANGULAR*
+## *ANGULAR*
 
-npm install -g @angular/cli
+- npm install -g @angular/cli
 
-ng new my-first-project  //Criar novo projeto (nao obrigatorio)
+- ng new my-first-project  //Criar novo projeto (nao obrigatorio)
 
-cd my-first-project //Cd no projeto (nao obrigatorio)
+- cd my-first-project //Cd no projeto (nao obrigatorio)
 
-ng serve --open
+- ng serve --open
 
 - *CRIAR PAGE ANGULAR*
 
-ng g c <nome>
+- ng g c <nome>
 
-- *CRIAR CONTROLLERS* (nao obrigatorio para setup)
+## *CRIAR CONTROLLERS* (nao obrigatorio para setup)
 
-dotnet-aspnet-codegenerator controller -name LoginController -m Login -dc Banco -api --relativeFolderPath Controllers
+- dotnet-aspnet-codegenerator controller -name LoginController -m Login -dc Banco -api --relativeFolderPath Controllers
 
 ========================================================================================================================================================================================
 
