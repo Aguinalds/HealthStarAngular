@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { AppRoutingModule } from './app-routing.module';
 //Angular Material
 import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { AdminComponent } from './admin/admin.component';
@@ -15,11 +15,13 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ConsultasComponent } from './consultas/consultas.component';
 import { MedicosComponent } from './medicos/medicos.component';
-import { RemediosComponent } from './remedios/remedios.component';
+import { RemediosComponent } from './remedios/remedios.component'
 import { CalendarioComponent } from './calendario/calendario.component';
 import { ConfiguracoesComponent } from './configuracoes/configuracoes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CadastroComponent } from './cadastro/cadastro.component';
+import { SeletorComponent } from './seletor/seletor.component';
+
+
 
 
 
@@ -36,7 +38,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     RemediosComponent,
     CalendarioComponent,
     ConfiguracoesComponent,
-    CadastroComponent,
+    SeletorComponent,
+
 
   ],
   imports: [
@@ -45,7 +48,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatButtonModule
   ],
   bootstrap: [AppComponent]
 })

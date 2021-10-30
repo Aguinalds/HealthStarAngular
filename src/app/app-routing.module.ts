@@ -9,7 +9,7 @@ import { MedicosComponent } from './medicos/medicos.component';
 import { RemediosComponent } from './remedios/remedios.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { ConfiguracoesComponent } from './configuracoes/configuracoes.component';
-import { CadastroComponent } from './cadastro/cadastro.component';
+
 
 const routes: Routes = [
   {path: '', component: DashboardComponent},
@@ -22,7 +22,7 @@ const routes: Routes = [
   {path: 'admin', component: AdminComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'cadastro', component: CadastroComponent}
+
 
 ];
 

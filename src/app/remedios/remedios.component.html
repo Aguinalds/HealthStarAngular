@@ -1,10 +1,13 @@
 <div class="content">
-    <h4 class="header">Remédios</h4>
-    <div class="content-card">
-        <div *ngFor="let remedios of remedios">
-            <h1>{{remedios.nome}}</h1>
-            <h1>{{remedios.desc}}</h1>
-
-        </div>
+  <h4 class="header">Remédios</h4>
+  <div class="content-card">
+    <div *ngFor="let remedio of remedios">
+      <h1>Remédio: {{ remedio.nome }}</h1>
+      <h1>Ciclo: {{ remedio.ciclo }}h</h1>
+      <h1>Tarja: {{ remedio.tarja }}</h1>
+   
     </div>
+       <app-seletor
+      ></app-seletor>
+  </div>
 </div>

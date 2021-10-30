@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Remedios } from './remedios';
+import { Remedio } from '../models/remedio.model';
+import { Remedios } from './remedio';
+
 
 @Component({
   selector: 'app-remedios',
@@ -8,10 +10,20 @@ import { Remedios } from './remedios';
 })
 export class RemediosComponent implements OnInit {
 
-  remedios =  Remedios;
-  constructor() { }
+
+
+  remedios = Remedios;
+ 
+
+
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
+   
   }
+
+  
 
 }
