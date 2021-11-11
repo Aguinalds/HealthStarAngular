@@ -1,10 +1,12 @@
-.btn-gravar{
+.btn-adicionar{
+    text-decoration: none;
     background-color:  #3195cf;
     border: none;
     border-radius: 10px;
     height: 40px;
     width: 70px;
     cursor: pointer;
+    
     
 
 }

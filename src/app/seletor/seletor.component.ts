@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 
 
+
+
 @Component({
   selector: 'app-seletor',
   templateUrl: './seletor.component.html',
@@ -10,11 +12,14 @@ import { Component, OnInit } from '@angular/core';
 export class SeletorComponent implements OnInit {
 
 
-  constructor() {
+
  
-   }
+  constructor() {
+  
+  }
 
   ngOnInit(): void {
   }
+
 
 }

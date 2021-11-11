@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Remedio } from '../models/remedio.model';
 import { Remedios } from './remedio';
+import { AdminServiceService } from '../services/admin-service.service';
 
 
 @Component({
@@ -17,7 +18,7 @@ export class RemediosComponent implements OnInit {
 
 
   constructor() { 
-    
+    this.remedios = Remedios
   }
 
   ngOnInit(): void {

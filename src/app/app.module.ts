@@ -20,6 +20,7 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { ConfiguracoesComponent } from './configuracoes/configuracoes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SeletorComponent } from './seletor/seletor.component';
+import { AdicionarComponent } from './admin/adicionar/adicionar.component';
 
 
 
@@ -39,6 +40,7 @@ import { SeletorComponent } from './seletor/seletor.component';
     CalendarioComponent,
     ConfiguracoesComponent,
     SeletorComponent,
+    AdicionarComponent,
 
 
   ],
