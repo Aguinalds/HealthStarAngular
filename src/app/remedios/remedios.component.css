@@ -1,0 +1,19 @@
+.remedios{
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 30px 0 30px;
+}
+.remedio-head{
+    margin-top: 30px;
+}
+.remedio-container{
+    background-color: #6AA6DD;
+    border-radius: 30px;
+}
+.remedio-tabela{
+    width: 100%;
+}
+h1{
+   margin: 12px 0;
+}

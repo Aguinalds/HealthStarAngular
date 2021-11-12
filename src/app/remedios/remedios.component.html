@@ -1,13 +1,20 @@
 <div class="content">
   <h4 class="header">Remédios</h4>
   <div class="content-card">
-    <div *ngFor="let remedio of remedios">
-      <h1>Remédio: {{ remedio.nome }}</h1>
-      <h1>Ciclo: {{ remedio.ciclo }}h</h1>
-      <h1>Tarja: {{ remedio.tarja }}</h1>
-      
+
+    <table class="remedio-tabela">
+      <tr class="remedio-head remedios">
+        <th><h1>Nome</h1></th>
+        <th><h1>Ciclo</h1></th>
+        <th><h1>Tarja</h1></th>
+      </tr>
+      <tr *ngFor="let remedio of remedios" class="remedio-container remedios">
+        <td><h1>{{ remedio.nome }}</h1></td>
+        <td><h1>{{ remedio.ciclo }}</h1></td>
+        <td><h1>{{ remedio.tarja }}</h1></td>
+      </tr>
+     </table> 
     
-    </div>
     <button ><a routerLink="/admin/adicionar">Adicionar</a></button>
     <router-outlet></router-outlet>
   </div>
