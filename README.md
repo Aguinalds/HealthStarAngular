@@ -36,7 +36,7 @@
 
 - ng new my-first-project  //Criar novo projeto (nao obrigatorio)
 
-- cd my-first-project //Cd no projeto (nao obrigatorio)
+- cd my-first-project //Cd no projeto (naoobrigatorio)
 
 - ng serve --open
 
