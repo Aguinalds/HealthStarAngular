@@ -10,6 +10,8 @@ import { RemediosComponent } from './remedios/remedios.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { ConfiguracoesComponent } from './configuracoes/configuracoes.component';
 import { AdicionarComponent } from './admin/adicionar/adicionar.component';
+import { ExcluirComponent } from './admin/excluir/excluir.component';
+import { EditarComponent } from './admin/editar/editar.component';
 
 
 const routes: Routes = [
@@ -21,14 +23,18 @@ const routes: Routes = [
   { path: 'configuracoes', component: ConfiguracoesComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'remedios', component: RemediosComponent},
-  { path: 'admin', component: AdminComponent,
-  children: [
-    { path: 'adicionar', component: AdicionarComponent }
-  ] }
-  
-    
-  
+  { path: 'remedios', component: RemediosComponent },
+  {
+    path: 'admin', component: AdminComponent,
+    children: [
+      { path: 'adicionar', component: AdicionarComponent },
+      { path: 'excluir/:id', component: ExcluirComponent },
+      { path: 'editar/:id', component: EditarComponent }
+    ]
+  }
+
+
+
 ];
 
 @NgModule({

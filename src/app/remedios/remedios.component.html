@@ -12,9 +12,11 @@
         <td><h1>{{ remedio.nome }}</h1></td>
         <td><h1>{{ remedio.ciclo }}</h1></td>
         <td><h1>{{ remedio.tarja }}</h1></td>
+        <a routerLink="/admin/excluir/{{ remedio.id}}">Excluir</a>
+        <a routerLink="/admin/editar/{{ remedio.id}}">Editar</a>
       </tr>
      </table>
-    
+ 
     <button ><a routerLink="/admin/adicionar">Adicionar</a></button>
     <router-outlet></router-outlet>
   </div>

@@ -2,16 +2,15 @@
   <h4 class="header">Adicionar</h4>
   <div class="content-card">
     <form>
-      <mat-card-title>Novo remédio</mat-card-title>
       <mat-card-content>
         <mat-form-field>
-          <input maiInput placeholder="Nome" name="nome" [(ngModel)]="remedio.nome">
+          <input matInput placeholder="Nome" name="nome" [(ngModel)]="remedio.nome">
         </mat-form-field>
         <mat-form-field>
-          <input maiInput type="number" placeholder="ciclo" name="ciclo" [(ngModel)]="remedio.ciclo">
+          <input matInput type="number" placeholder="ciclo" name="ciclo" [(ngModel)]="remedio.ciclo">
         </mat-form-field>
         <mat-form-field>
-          <input maiInput placeholder="Tarja" name="tarja" [(ngModel)]="remedio.tarja">
+          <input matInput placeholder="Tarja" name="tarja" [(ngModel)]="remedio.tarja">
         </mat-form-field>
       </mat-card-content>
       <button id="btnSelecionar" (click)="salvar(remedio)">Salvar</button>

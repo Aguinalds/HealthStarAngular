@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Remedio } from '../models/remedio.model';
 import { RemedioService } from '../services/remedio.service';
 
@@ -28,6 +29,7 @@ export class RemediosComponent implements OnInit {
       console.log(this.remedios)
     });
   }
+  
 
   
 
