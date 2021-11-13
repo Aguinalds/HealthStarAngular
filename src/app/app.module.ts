@@ -3,9 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+
 //Angular Material
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatListModule } from '@angular/material/list';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -18,9 +24,10 @@ import { MedicosComponent } from './medicos/medicos.component';
 import { RemediosComponent } from './remedios/remedios.component'
 import { CalendarioComponent } from './calendario/calendario.component';
 import { ConfiguracoesComponent } from './configuracoes/configuracoes.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SeletorComponent } from './seletor/seletor.component';
 import { AdicionarComponent } from './admin/adicionar/adicionar.component';
+import { EditarComponent } from './admin/editar/editar.component';
+import { ExcluirComponent } from './admin/excluir/excluir.component';
 
 
 
@@ -41,6 +48,8 @@ import { AdicionarComponent } from './admin/adicionar/adicionar.component';
     ConfiguracoesComponent,
     SeletorComponent,
     AdicionarComponent,
+    EditarComponent,
+    ExcluirComponent,
 
 
   ],
@@ -51,7 +60,11 @@ import { AdicionarComponent } from './admin/adicionar/adicionar.component';
     FormsModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+    MatListModule
   ],
   bootstrap: [AppComponent]
 })

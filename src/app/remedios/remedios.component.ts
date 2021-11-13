@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Remedio } from '../models/remedio.model';
-import { Remedios } from './remedio';
-import { AdminServiceService } from '../services/admin-service.service';
+import { RemedioService } from '../services/remedio.service';
+
 
 
 @Component({
@@ -13,16 +13,20 @@ export class RemediosComponent implements OnInit {
 
 
 
-  remedios = Remedios;
+  remedios: Remedio[];
+  displayedColumns: string[] = ['id', 'nome', 'ciclo', 'tarja'];
  
 
 
-  constructor() { 
-    this.remedios = Remedios
+  constructor(private service : RemedioService) { 
+    this.remedios = [];
   }
 
   ngOnInit(): void {
-   
+    this.service.listar().subscribe( remedios => {
+      this.remedios = remedios;
+      console.log(this.remedios)
+    });
   }
 
   
