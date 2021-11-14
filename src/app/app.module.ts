@@ -24,7 +24,6 @@ import { MedicosComponent } from './medicos/medicos.component';
 import { RemediosComponent } from './remedios/remedios.component'
 import { CalendarioComponent } from './calendario/calendario.component';
 import { ConfiguracoesComponent } from './configuracoes/configuracoes.component';
-import { SeletorComponent } from './seletor/seletor.component';
 import { AdicionarComponent } from './admin/adicionar/adicionar.component';
 import { EditarComponent } from './admin/editar/editar.component';
 import { ExcluirComponent } from './admin/excluir/excluir.component';
@@ -46,7 +45,6 @@ import { ExcluirComponent } from './admin/excluir/excluir.component';
     RemediosComponent,
     CalendarioComponent,
     ConfiguracoesComponent,
-    SeletorComponent,
     AdicionarComponent,
     EditarComponent,
     ExcluirComponent,
