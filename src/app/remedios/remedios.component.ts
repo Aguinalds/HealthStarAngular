@@ -15,7 +15,7 @@ export class RemediosComponent implements OnInit {
 
 
   remedios: Remedio[];
-  displayedColumns: string[] = ['id', 'nome', 'ciclo', 'tarja'];
+  displayedColumns: string[] = [ 'nome', 'ciclo', 'tarja', 'acoes'];
  
 
 

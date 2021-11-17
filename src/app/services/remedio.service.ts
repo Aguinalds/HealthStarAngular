@@ -10,7 +10,7 @@ export class RemedioService {
 
   constructor(private http: HttpClient) { }
 
-  url = "http://localhost:3001/remedios";
+  url = "http://localhost:3000/remedios";
 
   listar(): Observable<Remedio[]> {
     return this.http.get<Remedio[]>(this.url);
