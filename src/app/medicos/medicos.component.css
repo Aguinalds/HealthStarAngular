@@ -1,0 +1,37 @@
+
+  .medico-tabela {
+    text-align: center;
+    width: 90%;
+    background-color: #373737;
+    padding-top: 40px;
+  }
+  .mat-cell,
+  .mat-header-cell {
+    text-align: center;
+    color: #fff;
+    height: 35px;
+    background-color: #6aa6dd;
+    border-width: 9px;
+    border-style: solid;
+    border-radius: 14px;
+    border-color: #373737; 
+  }
+  .mat-header-cell {
+      height: 55px;
+  }
+  .btn-adc {
+    line-height: 22px !important;
+    background-color: #6aa6dd !important;
+    margin: 20px 5px 10px !important;
+    box-shadow: none !important;
+    width: 14% !important;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  

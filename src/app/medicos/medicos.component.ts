@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Medico } from '../models/medicos.model';
+import { MedicoService } from '../services/medico.service';
 
 @Component({
   selector: 'app-medicos',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MedicosComponent implements OnInit {
 
-  constructor() { }
+  medicos: Medico[];
+  displayedColumns: string[] = ['nome', 'especialidade', 'acoes'];
+ 
+
+  constructor(private service : MedicoService) {
+    this.medicos = [];
+   }
 
   ngOnInit(): void {
+    this.service.listar().subscribe( medicos => {
+      this.medicos = medicos;
+      console.log(this.medicos)
+    });
   }
 
 }

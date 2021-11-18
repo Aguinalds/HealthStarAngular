@@ -1,0 +1,27 @@
+<div class="content">
+  <h4 class="header">Adicionar</h4>
+  <div class="content-card">
+    <form>
+      <mat-card-content>
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Nome"
+            name="nome"
+            [(ngModel)]="medicos.nome"
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="especialidade"
+            name="especialidade"
+            [(ngModel)]="medicos.especialidade"
+          />
+        </mat-form-field>
+      </mat-card-content>
+      <button id="btnSelecionar" (click)="salvar(medicos)">Salvar</button>
+      <button id="btnSelecionar" routerLink="/medicos">Cancelar</button>
+    </form>
+  </div>
+</div>
