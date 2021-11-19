@@ -36,14 +36,31 @@
 
 - ng new my-first-project  //Criar novo projeto (nao obrigatorio)
 
-- cd my-first-project //Cd no projeto (naoobrigatorio)
+- cd my-first-project //Cd no projeto (nao obrigatorio)
+
+- ng add @angular/material // Adicionar material angular
 
 - ng serve --open
+
+## *CRIAR PIPE ANGULAR*
+
+- ng g pipe name-pipe
+
+## *CRIAR SERVICE ANGULAR*
+
+- ng g service service-name
 
 ## *CRIAR PAGE ANGULAR*
 
 - ng g c <nome>
 
+## *CRIAR PACKAGE JSON*
+
+- npm init -y
+
+## *CRIAR JSON SERVER*
+
+- npm install json-server
 ## *CRIAR CONTROLLERS* (nao obrigatorio para setup)
 
 - dotnet-aspnet-codegenerator controller -name LoginController -m Login -dc Banco -api --relativeFolderPath Controllers
