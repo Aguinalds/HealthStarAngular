@@ -7,13 +7,13 @@
           <input matInput placeholder="Nome" name="nome" [(ngModel)]="remedio.nome">
         </mat-form-field>
         <mat-form-field>
-          <input matInput type="number" placeholder="ciclo" name="ciclo" [(ngModel)]="remedio.ciclo">
+          <input matInput type="number" placeholder="Ciclo" name="ciclo" [(ngModel)]="remedio.ciclo">
         </mat-form-field>
         <mat-form-field>
           <input matInput placeholder="Tarja" name="tarja" [(ngModel)]="remedio.tarja">
         </mat-form-field>
-      </mat-card-content>
-      <button id="btnSelecionar" (click)="salvar(remedio)">Salvar</button>
+      <button mat-raised-button id="btnSelecionar" (click)="salvar(remedio)">Salvar</button>
+    </mat-card-content>
     </form>
   </div>
 </div>

@@ -8,6 +8,7 @@ import { RemedioService } from 'src/app/services/remedio.service';
   templateUrl: './adicionar.component.html',
   styleUrls: ['./adicionar.component.css']
 })
+
 export class AdicionarComponent implements OnInit {
 
   remedio : Remedio;
@@ -17,8 +18,11 @@ export class AdicionarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  
   }
 
+
+  
   salvar(remedio : Remedio){
     this.service.salvar(remedio).subscribe(() => {
       console.log('Remedio salvo!');

@@ -20,15 +20,12 @@
       height: 55px;
   }
   .btn-adc {
-    line-height: 22px !important;
     background-color: #6aa6dd !important;
-    margin: 20px 5px 10px !important;
-    box-shadow: none !important;
     width: 14% !important;
-    text-decoration: none;
     color: #fff;
     border: none;
     border-radius: 5px;
+    margin-top: 40px;
   }
   a {
     text-decoration: none;
