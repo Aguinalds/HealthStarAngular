@@ -4,34 +4,21 @@
     <form>
       <mat-card-content>
         <mat-form-field>
-          <input
-            matInput
-            placeholder="Nome"
-            name="nome"
-            [(ngModel)]="remedio.nome"
-          />
+          <input matInput placeholder="Nome" name="nome" [(ngModel)]="remedio.nome" />
         </mat-form-field>
         <mat-form-field>
-          <input
-            matInput
-            type="number"
-            placeholder="ciclo"
-            name="ciclo"
-            [(ngModel)]="remedio.ciclo"
-          />
+          <input matInput type="number" placeholder="ciclo" name="ciclo" [(ngModel)]="remedio.ciclo" />
         </mat-form-field>
         <mat-form-field>
-          <input
-            matInput
-            placeholder="Tarja"
-            name="tarja"
-            [(ngModel)]="remedio.tarja"
-          />
+          <input matInput placeholder="Tarja" name="tarja" [(ngModel)]="remedio.tarja" />
         </mat-form-field>
       </mat-card-content>
-      <button id="btnSelecionar" (click)="atualizar(remedio)">Salvar</button>
 
-      <button id="btnSelecionar" routerLink="/remedios">Cancelar</button>
+      <div id="botoes">
+        <button mat-raised-button id="btnSelecionar" (click)="atualizar(remedio)">Salvar</button>
+
+        <button mat-raised-button id="btnSelecionar" routerLink="/remedios">Cancelar</button>
+      </div>
     </form>
   </div>
 </div>
