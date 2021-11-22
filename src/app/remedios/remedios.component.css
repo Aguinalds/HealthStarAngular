@@ -34,11 +34,17 @@
 }
 .btn-adc {
   background-color: #6aa6dd !important;
-  width: 14% !important;
   color: #fff;
-  border: none;
   border-radius: 5px;
   margin-top: 40px;
+}
+
+.btn-ac {
+  border: none;
+  background-color: transparent;
+  margin-right: 15px;
+  font-weight: 600;
+  font-size: 12px;
 }
 a {
   text-decoration: none;
