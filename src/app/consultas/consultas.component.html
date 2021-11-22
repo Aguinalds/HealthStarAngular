@@ -32,7 +32,7 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
-    <button class="btn-adc" mat-raised-button><a routerLink="/admin/adicionarConsulta/">Adicionar</a></button>
+    <button class="btn-adc" mat-raised-button routerLink="/admin/adicionarConsulta/">Adicionar</button>
     <router-outlet></router-outlet>
 
 </div>

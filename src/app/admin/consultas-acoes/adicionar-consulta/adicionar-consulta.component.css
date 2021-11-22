@@ -30,8 +30,8 @@
     
     
   .medico-tabela {
-    text-align: center;
-    width: 58vw;
+    align-items: center;
+    width: 100%;
     background-color: transparent;
   }
   .mat-cell,
