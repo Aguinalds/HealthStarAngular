@@ -15,8 +15,9 @@ import { EditarComponent } from './admin/editar/editar.component';
 import { AdicionarMedicosComponent } from './admin/adicionar-medico/adicionar-medico.component';
 import { EditaMedicosComponent } from './admin/adicionar-medico/edita-medicos.component';
 import { ExcluirMedicosComponent } from './admin/adicionar-medico/excluir-medicos.component';
-
-
+import { AdicionarConsultaComponent } from './admin/consultas-acoes/adicionar-consulta/adicionar-consulta.component';
+import { EditarConsultaComponent } from './admin/consultas-acoes/editar-consulta/editar-consulta.component';
+import { ExcluirConsultaComponent } from './admin/consultas-acoes/excluir-consulta/excluir-consulta.component';
 
 
 const routes: Routes = [
@@ -37,8 +38,10 @@ const routes: Routes = [
       { path: 'editar/:id', component: EditarComponent },
       { path: 'adicionarMedico', component: AdicionarMedicosComponent},
       { path: 'editarMedico/:id', component: EditaMedicosComponent},
-      { path: 'excluirMedico/:id', component: ExcluirMedicosComponent}
-   
+      { path: 'excluirMedico/:id', component: ExcluirMedicosComponent},
+      { path: 'adicionarConsulta', component: AdicionarConsultaComponent},
+      { path: 'editarConsultaComponent/:id', component: EditarConsultaComponent},
+      { path: 'excluirConsultaComponent/:id', component: ExcluirConsultaComponent}
   
     ]
   }
