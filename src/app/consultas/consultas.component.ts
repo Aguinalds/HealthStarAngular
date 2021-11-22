@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Consulta } from '../models/consulta.model';
+import { ConsultaService } from '../services/consulta.service';
 
 @Component({
   selector: 'app-consultas',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultasComponent implements OnInit {
 
-  constructor() { }
+  consultas: Consulta[];
+  displayedColumns: string[] = ['medico', 'especialidade', 'data', 'valor'];
 
-  ngOnInit(): void {
+  constructor(private service: ConsultaService) {
+    this.consultas = [];
   }
 
+  ngOnInit(): void {
+    this.service.listar().subscribe(consultas => {
+      this.consultas = consultas;
+      console.log(this.consultas)
+    });
+  }
 }
