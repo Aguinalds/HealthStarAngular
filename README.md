@@ -65,6 +65,32 @@
 
 - dotnet-aspnet-codegenerator controller -name LoginController -m Login -dc Banco -api --relativeFolderPath Controllers
 
+## *EXPRESS GENERATOR*
+
+- npm install -g express-generator
+
+- express --view ejs
+
+## *CORS*
+
+- npm install -g cors
+
+## *MONGODB*
+
+- npm install -g mongodb
+
+## *MONGOOSE*
+
+- npm install -g mongoose   
+
+## *NPM*
+
+- npm install
+
+## *RODAR SERVIDOR-APIS*
+
+- nodemon ./bin/www
+
 ========================================================================================================================================================================================
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
