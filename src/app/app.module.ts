@@ -30,6 +30,9 @@ import { ExcluirComponent } from './admin/excluir/excluir.component';
 import { AdicionarMedicosComponent } from './admin/adicionar-medico/adicionar-medico.component';
 import { EditaMedicosComponent } from './admin/adicionar-medico/edita-medicos.component';
 import { ExcluirMedicosComponent } from './admin/adicionar-medico/excluir-medicos.component';
+import { AdicionarConsultaComponent } from './admin/consultas-acoes/adicionar-consulta/adicionar-consulta.component';
+import { EditarConsultaComponent } from './admin/consultas-acoes/editar-consulta/editar-consulta.component';
+import { ExcluirConsultaComponent } from './admin/consultas-acoes/excluir-consulta/excluir-consulta.component';
 
 
 
@@ -54,7 +57,10 @@ import { ExcluirMedicosComponent } from './admin/adicionar-medico/excluir-medico
     ExcluirComponent,
     AdicionarMedicosComponent,
     EditaMedicosComponent,
-    ExcluirMedicosComponent
+    ExcluirMedicosComponent,
+    AdicionarConsultaComponent,
+    EditarConsultaComponent,
+    ExcluirConsultaComponent
 
 
 
