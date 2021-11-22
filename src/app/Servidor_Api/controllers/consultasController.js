@@ -1,43 +1,43 @@
-const consultaModel = require('../models/medicosModel');
+const consultasModel = require('../models/consultasModel');
 
-class MedicoController {
+class consultasController {
 
 
     async salvar(req, res) {
-        const max = await medicosModel.findOne({}).sort({id: -1});
-        let medicos = req.body;
-        medicos.id = max == null ? 1 :  max.id + 1;
-        const resultado = await medicosModel.create(medicos);
+        const max = await consultasModel.findOne({}).sort({id: -1});
+        let consultas = req.body;
+        consultas.id = max == null ? 1 :  max.id + 1;
+        const resultado = await consultasModel.create(consultas);
         res.status(201).json(resultado);
     }
 
     async listar(req, res) {
-        const resultado = await medicosModel.find({});
+        const resultado = await consultasModel.find({});
         res.status(200).json(resultado);
 
     }
     
     async buscarPorId(req, res) {
-        const id = req.params.medicosId;
-        const resultado = await medicosModel.findOne({'id': id});
+        const id = req.params.consultasId;
+        const resultado = await consultasModel.findOne({'id': id});
         res.status(200).json(resultado)
 
     }
     async atualizar(req, res) {
-        const id = req.params.medicosId;
-        const _id = String((await medicosModel.findOne({'id' : id}))._id);
-        let medicos = req.body;
-        await medicosModel.findByIdAndUpdate(String(_id), medicos);
+        const id = req.params.consultasId;
+        const _id = String((await consultasModel.findOne({'id' : id}))._id);
+        let consultas = req.body;
+        await consultasModel.findByIdAndUpdate(String(_id), consultas);
         res.status(200).send();
     }
 
     async excluir(req, res) {
-        const id = req.params.medicosId;
-        const _id = String((await medicosModel.findOne({'id' : id}))._id);
-        await medicosModel.findByIdAndRemove(String(_id));
+        const id = req.params.consultasId;
+        const _id = String((await consultasModel.findOne({'id' : id}))._id);
+        await consultasModel.findByIdAndRemove(String(_id));
         res.status(200).send();
     }
 
 }
 
-module.exports = new MedicoController();
+module.exports = new consultasController();
