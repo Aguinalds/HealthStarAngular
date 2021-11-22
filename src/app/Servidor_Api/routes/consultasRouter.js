@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+const consultasController = require('../controllers/consultasController');
+
 /* GET lista de consultass */
 router.get('/', consultasController.listar);
 
