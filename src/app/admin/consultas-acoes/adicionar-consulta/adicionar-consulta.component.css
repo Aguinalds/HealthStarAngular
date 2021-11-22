@@ -1,0 +1,50 @@
+.content-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+   
+  #botoes {
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
+  }
+  
+    #btnSelecionar {
+      display: inline-block;
+      line-height: 35px!important;
+      background-color: #6AA6DD !important;
+      color: white;
+      align-items: center;
+      justify-content: center;  
+      position:relative;
+      width: 40%;
+      font-size: 16px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    
+    
+  .medico-tabela {
+    text-align: center;
+    width: 58vw;
+    background-color: transparent;
+  }
+  .mat-cell,
+  .mat-header-cell {
+    text-align: center;
+    color: #fff;
+    height: 35px;
+    background-color: #6aa6dd;
+    border-width: 9px;
+    border-style: solid;
+    border-radius: 14px;
+    border-color: #1B1A1A;; 
+  }
+  .mat-header-cell {
+      height: 55px;
+  }  
