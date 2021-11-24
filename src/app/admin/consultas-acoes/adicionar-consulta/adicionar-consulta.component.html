@@ -3,15 +3,27 @@
     <div class="content-card">
         <form>
             <mat-card-content>
-                <select class="MedicoSeletor" name="medico" ng-model="consultas.medico">
-                    <option *ngFor="let medico of medicos">{{medico.nome}} {{medico.especialidade}}</option>
-                </select>
-                <mat-form-field>
-                    <input matInput placeholder="Data" type="date" name="data" [(ngModel)]="consultas.data" />
-                </mat-form-field>
-                <mat-form-field>
-                    <input matInput placeholder="Valor" type="number" name="valor" [(ngModel)]="consultas.valor" />
-                </mat-form-field>
+                <Div id="seletor">
+                    <label class="control-label">Médico</label>
+                    <select class="MedicoSeletor" name="medico" [(ngModel)]="consultas.medico">
+                        <option *ngFor="let medico of medicos" [ngValue]="medico.nome + medico.especialidade">
+                            {{medico.nome}} {{medico.especialidade}}</option>
+                    </select>
+                </Div>
+
+                <Div class="inputs">
+                    <label class="control-label">Data</label>
+                    <mat-form-field>
+                        <input matInput placeholder="Data" type="date" name="data" [(ngModel)]="consultas.data" />
+                    </mat-form-field>
+                </Div>
+
+                <Div class="inputs">
+                    <label class="control-label">Valor</label>
+                    <mat-form-field>
+                        <input matInput placeholder="Valor" type="string" name="valor" [ngModel]="consultas.valor | currency : 'BRL'" (ngModelChange)="consultas.valor=$event"/>
+                    </mat-form-field>
+                </Div>
             </mat-card-content>
 
 

@@ -60,6 +60,13 @@
     margin-top: 8vh;
   }
   
+  .btn-ac {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
   a {
     text-decoration: none;
     color: #fff;

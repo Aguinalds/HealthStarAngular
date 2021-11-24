@@ -33,6 +33,7 @@ import { ExcluirMedicosComponent } from './admin/adicionar-medico/excluir-medico
 import { AdicionarConsultaComponent } from './admin/consultas-acoes/adicionar-consulta/adicionar-consulta.component';
 import { EditarConsultaComponent } from './admin/consultas-acoes/editar-consulta/editar-consulta.component';
 import { ExcluirConsultaComponent } from './admin/consultas-acoes/excluir-consulta/excluir-consulta.component';
+import { FormatoRealPipe } from './formato-real.pipe';
 
 
 
@@ -60,7 +61,8 @@ import { ExcluirConsultaComponent } from './admin/consultas-acoes/excluir-consul
     ExcluirMedicosComponent,
     AdicionarConsultaComponent,
     EditarConsultaComponent,
-    ExcluirConsultaComponent
+    ExcluirConsultaComponent,
+    FormatoRealPipe
 
 
 

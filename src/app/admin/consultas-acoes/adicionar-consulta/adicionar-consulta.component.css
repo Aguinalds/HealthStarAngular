@@ -39,7 +39,7 @@
   
   mat-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 30px;
     color: white;
   }
@@ -55,7 +55,7 @@
   }
   
   mat-form-field {
-    width: 60%;
+    width: 80%;
     color: white;
     margin-bottom: 35px;
     background-color: #6AA6DD;
@@ -70,8 +70,34 @@
     
   }
   
+  #seletor {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: center;
+  }
+
+  .control-label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2vh;
+  }
+
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: center;
+  }
+
   .MedicoSeletor {
-    width: 60%;
+    width: 80%;
     color: white;
     margin-bottom: 35px;
     background-color: #6AA6DD;

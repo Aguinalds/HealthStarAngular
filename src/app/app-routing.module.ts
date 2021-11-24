@@ -40,8 +40,8 @@ const routes: Routes = [
       { path: 'editarMedico/:id', component: EditaMedicosComponent},
       { path: 'excluirMedico/:id', component: ExcluirMedicosComponent},
       { path: 'adicionarConsulta', component: AdicionarConsultaComponent},
-      { path: 'editarConsultaComponent/:id', component: EditarConsultaComponent},
-      { path: 'excluirConsultaComponent/:id', component: ExcluirConsultaComponent}
+      { path: 'editarConsulta/:id', component: EditarConsultaComponent},
+      { path: 'excluirConsulta/:id', component: ExcluirConsultaComponent}
   
     ]
   }
