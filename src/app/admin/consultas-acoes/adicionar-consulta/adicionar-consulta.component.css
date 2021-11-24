@@ -83,13 +83,13 @@
   .control-label {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
   }
 
   .inputs{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 30%;
     align-items: center;
     flex-wrap: wrap;
     color: white;

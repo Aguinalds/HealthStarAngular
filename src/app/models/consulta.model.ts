@@ -2,6 +2,7 @@
 export interface Consulta {
     id: number,
     medico: string,
-    data: Date,
+    data: string,
+    time: string,
     valor: number
 };

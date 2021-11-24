@@ -12,21 +12,27 @@
                 </Div>
 
                 <Div class="inputs">
-                    <label class="control-label">Data</label>
+                    <label class="control-label">Dia</label>
                     <mat-form-field>
                         <input matInput placeholder="Data" type="date" name="data" [(ngModel)]="consultas.data" />
                     </mat-form-field>
                 </Div>
 
                 <Div class="inputs">
+                    <label class="control-label">Horário</label>
+                    <mat-form-field>
+                        <input matInput placeholder="Horário" type="time" name="time" [(ngModel)]="consultas.time" />
+                    </mat-form-field>
+                </Div>
+
+                <Div class="inputs">
                     <label class="control-label">Valor</label>
                     <mat-form-field>
-                        <input matInput placeholder="Valor" type="string" name="valor" [ngModel]="consultas.valor | currency : 'BRL'" (ngModelChange)="consultas.valor=$event"/>
+                        <input matInput placeholder="Valor" type="string" name="valor"
+                            [ngModel]="consultas.valor | currency : 'BRL'" (ngModelChange)="consultas.valor=$event" />
                     </mat-form-field>
                 </Div>
             </mat-card-content>
-
-
             <router-outlet></router-outlet>
 
             <div id="botoes">

@@ -12,6 +12,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -63,10 +64,6 @@ import { FormatoRealPipe } from './formato-real.pipe';
     EditarConsultaComponent,
     ExcluirConsultaComponent,
     FormatoRealPipe
-
-
-
-
   ],
   imports: [
     BrowserModule,
@@ -79,7 +76,8 @@ import { FormatoRealPipe } from './formato-real.pipe';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatDatepickerModule
   ],
   bootstrap: [AppComponent]
 })
