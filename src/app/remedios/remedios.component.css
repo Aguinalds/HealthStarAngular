@@ -1,3 +1,24 @@
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.content-card {
+  border-radius: 0;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: darkgrey;
+}
+
+*::-webkit-scrollbar {
+  width: thin;
+}
+
 .remedios {
   color: #fff;
   display: flex;
@@ -14,9 +35,9 @@
 }
 .remedio-tabela {
   text-align: center;
-  width: 90%;
-  background-color: #373737;
-  padding-top: 40px;
+  width: 58vw;
+  background-color: transparent;
+  overflow: scroll;
 }
 .mat-cell,
 .mat-header-cell {
@@ -27,7 +48,7 @@
   border-width: 9px;
   border-style: solid;
   border-radius: 14px;
-  border-color: #373737; 
+  border-color: #1B1A1A;;  
 }
 .mat-header-cell {
     height: 55px;
@@ -40,13 +61,26 @@
   width: 30%;
 }
 
+.mat-header-cell{
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .btn-ac {
   border: none;
   background-color: transparent;
-  margin-right: 15px;
   font-weight: 600;
   font-size: 12px;
 }
+
+.botoes {
+  min-width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8vh;
+}
+
 a {
   text-decoration: none;
   color: #fff;

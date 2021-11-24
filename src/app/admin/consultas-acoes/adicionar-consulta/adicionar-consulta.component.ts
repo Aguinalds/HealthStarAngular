@@ -14,7 +14,7 @@ export class AdicionarConsultaComponent implements OnInit {
 
   consultas : Consulta;
   medicos: Medico[];
-  displayedColumns: string[] = ['nome', 'especialidade'];
+  displayedColumns: string[] = ['nome', 'especialidade', 'adicionar'];
 
   constructor(private service: ConsultaService,private servicemed: MedicoService,private router: Router) {
     this.consultas = {} as Consulta;

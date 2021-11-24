@@ -5,6 +5,25 @@
   margin: 0;
   padding: 0;
 }
+
+.mat-header-cell{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.content-card {
+  border-radius: 0;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: darkgrey;
+}
+
+*::-webkit-scrollbar {
+  width: thin;
+}
+
    
   #botoes {
     min-width: 100vh;
@@ -27,12 +46,21 @@
       margin-right: 10px;
       margin-left: 10px;
     }
-    
-    
+  
+    #limit-table {
+      max-height: 30vh;
+      overflow: scroll;
+      max-width: 80vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
   .medico-tabela {
-    align-items: center;
-    width: 100%;
+    text-align: center;
+    width: 55vw;
     background-color: transparent;
+    margin-top: 1vh;
   }
   .mat-cell,
   .mat-header-cell {
@@ -43,8 +71,65 @@
     border-width: 9px;
     border-style: solid;
     border-radius: 14px;
-    border-color: #1B1A1A;; 
+    border-color: #1B1A1A;
+    padding: 0;
+    margin: 0;
   }
   .mat-header-cell {
       height: 55px;
+      text-align: center;
   }  
+  .btn-ac {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+  }
+
+  mat-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+  }
+  
+  mat-card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    color: white;
+    justify-content: center;
+  
+  }
+  
+  mat-form-field {
+    width: 38%;
+    color: white;
+    margin-bottom: 35px;
+    background-color: #6AA6DD;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    margin-right: 1vw;
+    margin-left: 1vw;
+    line-height: 15px;
+    height: 45px;
+    box-shadow: 7px 5px 3px black;
+    
+  }
+  
+  input {
+    color: white;
+    line-height: 15px;
+    height: 20px;
+  }
+  input::placeholder {
+    color: white;
+  }

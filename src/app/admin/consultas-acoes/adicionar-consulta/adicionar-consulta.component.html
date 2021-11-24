@@ -1,22 +1,46 @@
 <div class="content">
     <h4 class="header">Adicionar</h4>
-    <div class="content-card">
+    <div class="content-card" style="overflow: scroll;">
         <form>
-            <table class="medico-tabela" mat-table [dataSource]="medicos">
-                <div class="um">
-                    <ng-container matColumnDef="nome">
-                        <th mat-header-cell *matHeaderCellDef>Nome</th>
-                        <td mat-cell *matCellDef="let medico">{{ medico.nome }}</td>
+            <Div id="limit-table">
+                <table class="medico-tabela" mat-table [dataSource]="medicos">
+                    <div class="um">
+                        <ng-container matColumnDef="nome">
+                            <th mat-header-cell *matHeaderCellDef>Nome</th>
+                            <td mat-cell *matCellDef="let medico">{{ medico.nome }}</td>
+                        </ng-container>
+                    </div>
+                    <ng-container matColumnDef="especialidade">
+                        <th mat-header-cell *matHeaderCellDef>Especialidade</th>
+                        <td mat-cell *matCellDef="let medico">{{ medico.especialidade }}</td>
                     </ng-container>
-                </div>
-                <ng-container matColumnDef="especialidade">
-                    <th mat-header-cell *matHeaderCellDef>Especialidade</th>
-                    <td mat-cell *matCellDef="let medico">{{ medico.especialidade }}</td>
-                </ng-container>
-                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-              </table>
-              <router-outlet></router-outlet>
+                    <ng-container matColumnDef="adicionar">
+                        <th mat-header-cell *matHeaderCellDef>Ação</th>
+                        <td mat-cell *matCellDef="let medico"><button class="btn-ac"><a>Adicionar</a></button></td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+                </table>
+            </Div>
+
+            <mat-card-content>
+                <mat-form-field>
+                    <input matInput placeholder="Medico" name="medico" value="" [(ngModel)]="consultas.medico" />
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Especialidade" name="especialidade" value=""
+                        [(ngModel)]="consultas.especialidade" />
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Data" type="date" name="data" [(ngModel)]="consultas.data" />
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Valor" type="number" name="valor" [(ngModel)]="consultas.valor" />
+                </mat-form-field>
+            </mat-card-content>
+
+
+            <router-outlet></router-outlet>
 
             <div id="botoes">
                 <button mat-raised-button id="btnSelecionar" (click)="salvar(consultas)">Salvar</button>

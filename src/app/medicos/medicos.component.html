@@ -1,30 +1,34 @@
 <div class="content">
-    <h4 class="header">Médicos</h4>
+  <h4 class="header">Médicos</h4>
+  <div class="content-card" style="overflow: scroll;">
 
     <table class="medico-tabela" mat-table [dataSource]="medicos">
-        <div class="um">
-          <ng-container matColumnDef="nome">
-            <th mat-header-cell *matHeaderCellDef>Nome</th>
-            <td mat-cell *matCellDef="let medico">{{ medico.nome }}</td>
-          </ng-container>
-        </div>
-        <ng-container matColumnDef="especialidade">
-          <th mat-header-cell *matHeaderCellDef>Especialidade</th>
-          <td mat-cell *matCellDef="let medico">{{ medico.especialidade }}</td>
+      <div class="um">
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef>Nome</th>
+          <td mat-cell *matCellDef="let medico">{{ medico.nome }}</td>
         </ng-container>
+      </div>
+      <ng-container matColumnDef="especialidade">
+        <th mat-header-cell *matHeaderCellDef>Especialidade</th>
+        <td mat-cell *matCellDef="let medico">{{ medico.especialidade }}</td>
+      </ng-container>
 
-        <ng-container matColumnDef="acoes">
-          <th mat-header-cell *matHeaderCellDef>Configurações</th>
-          <td class="ultima-coluna" mat-cell *matCellDef="let medico">
-            <button  class="btn-ac"><a routerLink="/admin/editarMedico/{{ medico.id }}">Editar</a></button>
-            <button  class="btn-ac"><a routerLink="/admin/excluirMedico/{{ medico.id }}">Excluir</a></button>
-          </td>
-        </ng-container>
-        
+      <ng-container matColumnDef="acoes">
+        <th mat-header-cell *matHeaderCellDef>Configurações</th>
+        <td class="ultima-coluna" mat-cell *matCellDef="let medico">
+          <button class="btn-ac"><a routerLink="/admin/editarMedico/{{ medico.id }}">Editar</a></button>
+          <button class="btn-ac"><a routerLink="/admin/excluirMedico/{{ medico.id }}">Excluir</a></button>
+        </td>
+      </ng-container>
+
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
-    <button class="btn-adc" mat-raised-button routerLink="/admin/adicionarMedico/" >Adiciona</button>
-    <router-outlet></router-outlet>
 
-</div>
+    <div class="botoes">
+      <button class="btn-adc" routerLink="/admin/adicionarConsulta/" mat-raised-button><a>Adicionar</a></button>
+    </div>
+    <router-outlet></router-outlet>
+    </div>
+  </div>

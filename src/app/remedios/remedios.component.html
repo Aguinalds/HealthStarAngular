@@ -1,5 +1,6 @@
 <div class="content">
   <h4 class="header">Remédios</h4>
+  <div class="content-card" style="overflow: scroll;">
 
     <table class="remedio-tabela" mat-table [dataSource]="remedios">
       <div class="um">
@@ -26,12 +27,14 @@
         </td>
       </ng-container>
 
-    
+
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
 
-    <button class="btn-adc" mat-raised-button routerLink="/admin/adicionar">Adicionar</button>
+    <div class="botoes">
+      <button class="btn-adc" mat-raised-button routerLink="/admin/adicionarConsulta/"><a>Adicionar</a></button>
+    </div>
     <router-outlet></router-outlet>
-
+  </div>
 </div>

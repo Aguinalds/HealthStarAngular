@@ -28,7 +28,7 @@ export class ExcluirComponent implements OnInit {
 
   excluir(remedio: Remedio) {
     this.service.excluir(remedio.id).subscribe(() => {
-      console.log('Remedio excluido!');
+      console.log('Remedio atualizado!');
       this.router.navigate(['/remedios'])
     })
   }
