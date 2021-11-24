@@ -1,6 +1,6 @@
 <div class="content">
     <h4 class="header">Adicionar</h4>
-    <div class="content-card" style="overflow: scroll;">
+    <div class="content-card">
         <form>
             <Div id="limit-table">
                 <table class="medico-tabela" mat-table [dataSource]="medicos">
@@ -28,8 +28,7 @@
                     <input matInput placeholder="Medico" name="medico" value="" [(ngModel)]="consultas.medico" />
                 </mat-form-field>
                 <mat-form-field>
-                    <input matInput placeholder="Especialidade" name="especialidade" value=""
-                        [(ngModel)]="consultas.especialidade" />
+                    <input matInput placeholder="Especialidade" name="especialidade" value="" [(ngModel)]="consultas.especialidade"/>
                 </mat-form-field>
                 <mat-form-field>
                     <input matInput placeholder="Data" type="date" name="data" [(ngModel)]="consultas.data" />
