@@ -2,34 +2,10 @@
     <h4 class="header">Adicionar</h4>
     <div class="content-card">
         <form>
-            <Div id="limit-table">
-                <table class="medico-tabela" mat-table [dataSource]="medicos">
-                    <div class="um">
-                        <ng-container matColumnDef="nome">
-                            <th mat-header-cell *matHeaderCellDef>Nome</th>
-                            <td mat-cell *matCellDef="let medico">{{ medico.nome }}</td>
-                        </ng-container>
-                    </div>
-                    <ng-container matColumnDef="especialidade">
-                        <th mat-header-cell *matHeaderCellDef>Especialidade</th>
-                        <td mat-cell *matCellDef="let medico">{{ medico.especialidade }}</td>
-                    </ng-container>
-                    <ng-container matColumnDef="adicionar">
-                        <th mat-header-cell *matHeaderCellDef>Ação</th>
-                        <td mat-cell *matCellDef="let medico"><button class="btn-ac"><a>Adicionar</a></button></td>
-                    </ng-container>
-                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-                </table>
-            </Div>
-
             <mat-card-content>
-                <mat-form-field>
-                    <input matInput type="text" placeholder="Medico" name="medico" [(ngModel)]="consultas.medico" />
-                </mat-form-field>
-                <mat-form-field>
-                    <input matInput type="text" placeholder="Especialidade" name="especialidade" [(ngModel)]="consultas.especialidade"/>
-                </mat-form-field>
+                <select class="MedicoSeletor" name="medico" ng-model="consultas.medico">
+                    <option *ngFor="let medico of medicos">{{medico.nome}} {{medico.especialidade}}</option>
+                </select>
                 <mat-form-field>
                     <input matInput placeholder="Data" type="date" name="data" [(ngModel)]="consultas.data" />
                 </mat-form-field>

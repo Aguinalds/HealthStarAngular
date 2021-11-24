@@ -10,7 +10,7 @@ import { ConsultaService } from '../services/consulta.service';
 export class ConsultasComponent implements OnInit {
 
   consultas: Consulta[];
-  displayedColumns: string[] = ['medico', 'especialidade', 'data', 'valor'];
+  displayedColumns: string[] = ['medico', 'data', 'valor'];
 
   constructor(private service: ConsultaService) {
     this.consultas = [];

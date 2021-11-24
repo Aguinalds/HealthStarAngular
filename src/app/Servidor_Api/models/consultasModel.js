@@ -4,7 +4,6 @@ const consultaSchema = new mongoose.Schema({
 
     id: Number,
     medico: String,
-    especialidade: String,
     data: Date,
     valor: String
 });
