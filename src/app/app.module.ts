@@ -35,7 +35,7 @@ import { EditarConsultaComponent } from './admin/consultas-acoes/editar-consulta
 import { ExcluirConsultaComponent } from './admin/consultas-acoes/excluir-consulta/excluir-consulta.component';
 import { FormatoRealPipe } from './formato-real.pipe';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import { AuthComponent } from './services/auth/auth.component';
+
 
 
 
@@ -65,7 +65,6 @@ import { AuthComponent } from './services/auth/auth.component';
     ExcluirConsultaComponent,
     FormatoRealPipe,
     CadastroComponent,
-    AuthComponent,
   ],
   imports: [
     BrowserModule,
