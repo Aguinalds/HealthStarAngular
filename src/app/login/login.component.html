@@ -1,4 +1,27 @@
 <div class="content">
-  <h4 class="header">Login</h4>
-  <div class="content-card"></div>
+  <h4 class="header"></h4>
+  <div class="content-card">
+    <form>
+      <mat-card-content>
+        <div class="inputs">
+          <img id="logo" src="../assets/Logo.svg" style="height: 10vh; margin-bottom: 10vh;">
+          <label class="control-label">Email</label>
+          <mat-form-field>
+            <input matInput type="text" name="email">
+          </mat-form-field>
+        </div>
+
+        <div class="inputs">
+          <label class="control-label">Senha</label>
+          <mat-form-field>
+            <input matInput type="text" name="senha">
+          </mat-form-field>
+        </div>
+        <button mat-raised-button id="btnSelecionar">Logar</button>
+
+        <A style="margin-top: 3vh; margin-left: 85vh; font-size: 12px; color: #c6c6c6;">Não tem uma conta ainda ?<A
+            style="color: #6AA6DD;" routerLink="/cadastro" id="cadastro"> Cadastre-se !</A></A>
+      </mat-card-content>
+    </form>
+  </div>
 </div>
