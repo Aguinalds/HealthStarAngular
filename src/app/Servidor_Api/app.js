@@ -10,7 +10,8 @@ var cors = require('cors');
 var indexRouter = require('./routes/indexRouter');
 var remedioRouter = require('./routes/remedioRouter');
 var medicosRouter = require('./routes/medicosRouter');
-var consultasRouter = require('./routes/consultasRouter')
+var consultasRouter = require('./routes/consultasRouter');
+var loginRouter = require('./routes/loginRouter');
 
 var app = express();
 
@@ -30,13 +31,28 @@ app.use('/', indexRouter);
 app.use('/remedios', remedioRouter);
 app.use('/medicos', medicosRouter);
 app.use('/consultas', consultasRouter);
+app.use('/auth', loginRouter )
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
 
+// Recursos de upload.
+const multer = require('multer');
+const storage = multer.diskStorage({
+  destination: function (req, arquivo, callback) {
+    callback(null, 'public/fotos/');
+  },
+  filename: function (req, arquivo, callback) {
+    callback(null, arquivo.originalname);
+  }
+})
+const upload = multer({ storage: storage });
 
+app.post("/upload", upload.single('arquivo'), (req, res) => {
+  res.status(200).send();
+})
 
 
 // error handler
