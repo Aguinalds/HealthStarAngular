@@ -1,4 +1,45 @@
 <div class="content">
     <h4 class="header">Dashboard</h4>
-    <div class="content-card"></div>
+    <div class="content-card">
+        <div class="section-consulta" style="overflow: scroll;">
+
+            <h4 class="header" style="color: white"><a routerLink="consultas">Consultas</a></h4>
+            <table class="consulta-tabela" mat-table [dataSource]="consultas" >
+                <div class="um">
+                    <ng-container matColumnDef="data">
+                        <th mat-header-cell *matHeaderCellDef>Dia</th>
+                        <td mat-cell *matCellDef="let consulta">{{ consulta.data }}</td>
+                    </ng-container>
+                </div>
+                <ng-container matColumnDef="time">
+                    <th mat-header-cell *matHeaderCellDef>Horário</th>
+                    <td mat-cell *matCellDef="let consulta">{{ consulta.time }}</td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumnsCon"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumnsCon"></tr>
+            </table>
+        </div>
+
+        <div class="section-remedios" style="overflow: scroll;">
+            <h4 class="header" style="color: white"><a routerLink="remedios">Remedios</a></h4>
+            <table class="remedio-tabela" mat-table [dataSource]="remedios">
+                <div class="um">
+                    <ng-container matColumnDef="nome">
+                        <th mat-header-cell *matHeaderCellDef>Nome</th>
+                        <td mat-cell *matCellDef="let remedio">{{ remedio.nome }}</td>
+                    </ng-container>
+                </div>
+                <ng-container matColumnDef="ciclo">
+                    <th mat-header-cell *matHeaderCellDef>Ciclo</th>
+                    <td mat-cell *matCellDef="let remedio">{{ remedio.ciclo }}</td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumnsRem"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumnsRem"></tr>
+            </table>
+        </div>
+
+        <router-outlet></router-outlet>
+    </div>
 </div>

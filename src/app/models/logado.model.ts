@@ -7,6 +7,5 @@ export class Logado{
     email: string = "";
     senha: string = "";
     usuario: Usuario = new Usuario();
-    
   }
   

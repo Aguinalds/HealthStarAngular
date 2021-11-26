@@ -17,8 +17,8 @@
       <ng-container matColumnDef="acoes">
         <th mat-header-cell *matHeaderCellDef>Configurações</th>
         <td class="ultima-coluna" mat-cell *matCellDef="let medico">
-          <button class="btn-ac"><a routerLink="/admin/editarMedico/{{ medico.id }}">Editar</a></button>
-          <button class="btn-ac"><a routerLink="/admin/excluirMedico/{{ medico.id }}">Excluir</a></button>
+          <button class="btn-ac btn-editar"><a routerLink="/admin/editarMedico/{{ medico.id }}">Editar</a></button>
+          <button class="btn-ac btn-excluir"><a routerLink="/admin/excluirMedico/{{ medico.id }}">Excluir</a></button>
         </td>
       </ng-container>
 

@@ -1,0 +1,46 @@
+.content-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: darkgrey;
+}
+
+*::-webkit-scrollbar {
+  width: thin;
+}
+
+
+.section-consulta > h4, .section-remedios > h4{
+    margin-bottom: auto;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.section-remedios{
+    margin-top: 20px;
+}
+.consulta-tabela, .remedio-tabela{
+    background-color: transparent;
+    width: 100% !important;
+}
+.mat-cell,
+.mat-header-cell {
+  text-align: center;
+  color: #fff;
+  height: 35px;
+}
+.mat-header-cell {
+    height: 55px;
+    border-bottom: solid  4px #6aa6dd;
+}
+.mat-cell{
+  border-bottom: solid 2px;
+  border-bottom-color: #454545;
+}
+th.mat-header-cell:first-of-type{
+  padding-left: 0;
+}

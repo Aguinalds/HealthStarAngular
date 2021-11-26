@@ -5,8 +5,6 @@ const consultaSchema = new mongoose.Schema({
     id: Number,
     medico: {
         type: String,
-        required: true,
-        unique: true
     },
     data: {
         type: String,
