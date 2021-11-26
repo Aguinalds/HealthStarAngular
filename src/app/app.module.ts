@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 //Angular Material
 import {MatTableModule} from '@angular/material/table';
@@ -79,6 +80,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     MatCardModule,
     MatListModule,
     MatDatepickerModule,
+    ReactiveFormsModule
   ],
   bootstrap: [AppComponent]
 })

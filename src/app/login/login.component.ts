@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Usuario } from '../models/usuario.model';
+import { AuthService } from '../services/auth.service';
+import { Location } from '@angular/common';
+import { catchError } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 
 
@@ -8,16 +15,35 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent  {
+  loginForm: FormGroup;
+  isInvalido = false;
 
-
-  
-
-  ngOnInit(): void {
-    
+  constructor(
+    private location: Location,
+    private fb: FormBuilder,
+    private authService: AuthService
+  ) {
+    this.loginForm = this.fb.group({
+      email: this.fb.control('', [Validators.required, Validators.email]),
+      senha: this.fb.control('', [Validators.required])
+     });
   }
 
-  
+  logar(){
+    this.authService.login(
+      this.loginForm.value.email,
+      this.loginForm.value.senha)
+      .pipe(catchError(error =>{
+        this.isInvalido = true;
+        return Observable.throw(error);
+      }))
+    .subscribe(() => {
+      this.isInvalido = false;
+      this.location.back();
+    });
+  }
+
 
 
 }

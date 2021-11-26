@@ -18,11 +18,6 @@ export class AuthService {
     return this.usuarioLogado.id > 0;
   }
 
-  public isAdmin(): boolean {
-    const papel = this.usuarioLogado.perfil.papel;
-    return this.isAutenticado() && papel === "admin";
-  }
-
   constructor(private http: HttpClient, private location: Location) {}
 
   login(email: string, senha: string): Observable<Usuario> {

@@ -32,7 +32,7 @@ const usuarioSchema = new mongoose.Schema({
 });
 
 usuarioSchema.pre('save', async function (next) {
-    const hash = await bcryptjs.hash(this.senha, 10);
+    const hash = await bcryptjs.hash(this.senha, 4);
     this.senha = hash;
     next();
 });

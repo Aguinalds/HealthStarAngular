@@ -1,27 +1,36 @@
 <div class="content">
   <h4 class="header"></h4>
   <div class="content-card">
-    <form>
-      <mat-card-content>
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="logar()" style="background-color: transparent; margin-top: 10vh; width: 80%;">
         <div class="inputs">
           <img id="logo" src="../assets/Logo.svg" style="height: 10vh; margin-bottom: 10vh;">
-          <label class="control-label">Email</label>
-          <mat-form-field>
-            <input matInput type="text" name="email">
+        <mat-error *ngIf="isInvalido">
+          O usuário e a senha são inválidos!
+        </mat-error>
+          <mat-form-field class="full-width-input">
+            <input matInput type="email" placeholder="E-mail" formControlName="email" required>
+            <mat-error>
+              Por favor forneça um e-mail válido!
+            </mat-error>
           </mat-form-field>
         </div>
 
         <div class="inputs">
-          <label class="control-label" type="password" >Senha</label>
-          <mat-form-field>
-            <input matInput type="text" name="senha">
+          <mat-form-field class="full-width-input">
+            <input matInput type="password" placeholder="Senha" formControlName="senha" required>
+            <mat-error>
+              Por favor forneça uma senha válida!
+            </mat-error>
           </mat-form-field>
-        </div>
-        <button mat-raised-button id="btnSelecionar">Logar</button>
 
-        <A style="margin-top: 3vh; margin-left: 85vh; font-size: 12px; color: #c6c6c6;">Não tem uma conta ainda ?<A
-            style="color: #6AA6DD;" routerLink="/cadastro" id="cadastro"> Cadastre-se !</A></A>
-      </mat-card-content>
-    </form>
+          <button id="btn-logar" mat-raised-button>Logar</button>
+        </div>
+      </form>  
+        <A style="margin-top: 10vh; margin-left: 70vh; font-size: 12px; color: #c6c6c6;">Não tem uma conta ?<A
+              style="color: #6AA6DD;" routerLink="/cadastro" id="login"> Cadastre-se !</A></A>
+          
+    </mat-card-content>
+
   </div>
 </div>
