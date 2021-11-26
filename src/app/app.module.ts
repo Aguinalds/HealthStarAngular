@@ -35,6 +35,7 @@ import { AdicionarConsultaComponent } from './admin/consultas-acoes/adicionar-co
 import { EditarConsultaComponent } from './admin/consultas-acoes/editar-consulta/editar-consulta.component';
 import { ExcluirConsultaComponent } from './admin/consultas-acoes/excluir-consulta/excluir-consulta.component';
 import { FormatoRealPipe } from './formato-real.pipe';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 
 
@@ -63,7 +64,8 @@ import { FormatoRealPipe } from './formato-real.pipe';
     AdicionarConsultaComponent,
     EditarConsultaComponent,
     ExcluirConsultaComponent,
-    FormatoRealPipe
+    FormatoRealPipe,
+    CadastroComponent,
   ],
   imports: [
     BrowserModule,
@@ -77,7 +79,7 @@ import { FormatoRealPipe } from './formato-real.pipe';
     MatInputModule,
     MatCardModule,
     MatListModule,
-    MatDatepickerModule
+    MatDatepickerModule,
   ],
   bootstrap: [AppComponent]
 })
