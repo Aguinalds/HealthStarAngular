@@ -14,11 +14,13 @@
 }
 
 
-.section-consulta > h4, .section-remedios > h4{
+h4{
     margin-bottom: auto;
     text-align: center;
     font-weight: 700;
     margin-top: 20px;
+    color: white;
+    text-decoration: none;
 }
 .section-remedios{
     margin-top: 20px;

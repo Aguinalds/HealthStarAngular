@@ -1,9 +1,8 @@
 <div class="content">
     <h4 class="header">Dashboard</h4>
     <div class="content-card">
+        <h4 class="header" style="color: white">Consultas</h4>
         <div class="section-consulta" style="overflow: scroll;">
-
-            <h4 class="header" style="color: white"><a routerLink="consultas">Consultas</a></h4>
             <table class="consulta-tabela" mat-table [dataSource]="consultas" >
                 <div class="um">
                     <ng-container matColumnDef="data">
@@ -21,8 +20,8 @@
             </table>
         </div>
 
+        <h4 class="header" style="color: white"><a>Remedios</a></h4>
         <div class="section-remedios" style="overflow: scroll;">
-            <h4 class="header" style="color: white"><a routerLink="remedios">Remedios</a></h4>
             <table class="remedio-tabela" mat-table [dataSource]="remedios">
                 <div class="um">
                     <ng-container matColumnDef="nome">
