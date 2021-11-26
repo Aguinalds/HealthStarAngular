@@ -8,7 +8,6 @@ import { ConsultasComponent } from './consultas/consultas.component';
 import { MedicosComponent } from './medicos/medicos.component';
 import { RemediosComponent } from './remedios/remedios.component';
 import { CalendarioComponent } from './calendario/calendario.component';
-import { ConfiguracoesComponent } from './configuracoes/configuracoes.component';
 import { AdicionarComponent } from './admin/adicionar/adicionar.component';
 import { ExcluirComponent } from './admin/excluir/excluir.component';
 import { EditarComponent } from './admin/editar/editar.component';
@@ -27,7 +26,6 @@ const routes: Routes = [
   { path: 'consultas', component: ConsultasComponent },
   { path: 'medicos', component: MedicosComponent },
   { path: 'calendario', component: CalendarioComponent },
-  { path: 'configuracoes', component: ConfiguracoesComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'remedios', component: RemediosComponent },
