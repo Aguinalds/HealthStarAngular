@@ -29,7 +29,7 @@ mat-card {
   input {
     color: white;
     line-height: 15px;
-    height: 10px;
+
   }
   input::placeholder {
     color: white;

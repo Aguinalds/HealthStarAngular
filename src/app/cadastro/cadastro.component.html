@@ -7,24 +7,24 @@
             <img id="logo" src="../assets/Logo.svg" style="height: 10vh; margin-bottom: 10vh;">
             <label class="control-label">Email</label>
             <mat-form-field>
-              <input matInput type="text" name="email">
+              <input matInput type="text" name="email" [(ngModel)]="usuario.email">
             </mat-form-field>
           </div>
   
           <div class="inputs">
             <label class="control-label">Nome</label>
             <mat-form-field>
-              <input matInput type="text" name="nome">
+              <input matInput type="text" name="nome" [(ngModel)]="usuario.nome">
             </mat-form-field>
           </div>
 
           <div class="inputs">
             <label class="control-label">Senha</label>
             <mat-form-field>
-              <input matInput type="text" name="senha">
+              <input matInput type="text" name="senha" [(ngModel)]="usuario.senha">
             </mat-form-field>
           </div>
-          <button mat-raised-button id="btnSelecionar">Cadastrar</button>
+          <button mat-raised-button id="btnSelecionar" (click)="salvarUsuario()">Cadastrar</button>
   
           <A style="margin-top: 1vh; margin-left: 92vh; font-size: 12px; color: #c6c6c6;">Já tem uma conta ?<A
             style="color: #6AA6DD;" routerLink="/login" id="login"> Faça Login !</A></A>

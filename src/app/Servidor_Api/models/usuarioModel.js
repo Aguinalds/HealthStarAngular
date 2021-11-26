@@ -5,7 +5,10 @@ const bcryptjs = require('bcryptjs');
 const usuarioSchema = new mongoose.Schema({
 
     id: Number,
-    nome: String,
+    nome: {
+        type: String,
+        required: true,
+    },
     email: {
         type: String,
         required: true,
@@ -20,11 +23,16 @@ const usuarioSchema = new mongoose.Schema({
     dataCriacao: {
         type: Date,
         default: Date.now,
-    }
+    },
+    token: {
+        type: String,
+        select: false
+      }
+    
 });
 
 usuarioSchema.pre('save', async function (next) {
-    const hash = await bcryptjs.has(this.senha, 10);
+    const hash = await bcryptjs.hash(this.senha, 10);
     this.senha = hash;
     next();
 });

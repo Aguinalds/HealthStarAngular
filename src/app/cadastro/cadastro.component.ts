@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Usuario } from '../models/usuario.model';
+import { UsuarioService } from '../services/usuario.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  constructor() { }
+  usuario: Usuario = new Usuario();
+
+  constructor(private service: UsuarioService,
+    private router: Router) { }
+
 
   ngOnInit(): void {
   }
 
+  salvarUsuario() {
+    this.service.salvar(this.usuario).subscribe(() => {
+      this.router.navigate(['/']);
+    });
+
+
+  }
 }
