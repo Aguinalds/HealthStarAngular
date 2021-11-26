@@ -18,10 +18,11 @@ import { ExcluirMedicosComponent } from './admin/adicionar-medico/excluir-medico
 import { AdicionarConsultaComponent } from './admin/consultas-acoes/adicionar-consulta/adicionar-consulta.component';
 import { EditarConsultaComponent } from './admin/consultas-acoes/editar-consulta/editar-consulta.component';
 import { ExcluirConsultaComponent } from './admin/consultas-acoes/excluir-consulta/excluir-consulta.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: '', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'consultas', component: ConsultasComponent },
   { path: 'medicos', component: MedicosComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'remedios', component: RemediosComponent },
+  { path: 'cadastro', component: CadastroComponent},
   {
     path: 'admin', component: AdminComponent,
     children: [
@@ -42,12 +44,8 @@ const routes: Routes = [
       { path: 'adicionarConsulta', component: AdicionarConsultaComponent},
       { path: 'editarConsulta/:id', component: EditarConsultaComponent},
       { path: 'excluirConsulta/:id', component: ExcluirConsultaComponent}
-  
     ]
   }
-
-
-
 ];
 
 @NgModule({
