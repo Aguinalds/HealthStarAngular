@@ -60,6 +60,14 @@
 
 - npm install -g mongodb 
 
+## *Json Web Token*
+
+- npm install jsonwebtoken
+
+## *bcryptjs*
+
+-npm install bcryptjs
+
 ## *CRIAR PIPE ANGULAR*
 
 - ng g pipe name-pipe
